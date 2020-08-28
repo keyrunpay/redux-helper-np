@@ -1,6 +1,7 @@
-import React from 'react'
-import styles from './styles.module.css'
+import makeReducer, {
+  customAction,
+  updateState,
+  fetchFromApi
+} from './reduxHelper'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { makeReducer, customAction, updateState, fetchFromApi }

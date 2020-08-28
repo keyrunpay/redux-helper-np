@@ -1,7 +1,7 @@
 {
   "name": "redux-helper-np",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "description": "Redux Helper made by Buggged",
   "author": "keyrunpay",
   "license": "MIT",
   "repository": "keyrunpay/redux-helper-np",
@@ -14,17 +14,12 @@
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
-  },
-  "peerDependencies": {
-    "react": "^16.0.0"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
@@ -42,10 +37,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.2.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "prettier": "^2.0.4"
   },
   "files": [
     "dist"
